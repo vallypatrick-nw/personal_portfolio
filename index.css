@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+nav{
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+  background-color: #080808;
+  color: #fff;
+  align-items: center;
+  height: 60px;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  align-items: center;
+}
+
+nav ul li{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.cta-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.black{
+  border: 1px solid #000;
+  color: #000;
+}
+
+#brand{
+  font-weight: bolder;
+  font-size: 2.0rem;
+}
+
+
+/* Hero Section  */
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  background-color: #080808;
+  height: calc(100vh - 80px);
+  color: #fff;
+  padding: 0 50px;
+  gap: 10px;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.im{
+  color: rgb(70, 70, 70);
+}
+
+.cta{
+  background-color: #d21f46;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.black-filled{
+  background-color: #000;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.brief{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.brief p {
+  font-size: 1.5rem;
+  font-weight: medium;
+}
+
+.hero figure{
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.hero img {
+  width: 300px;
+}
+
+/* projects  */
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.projects article {
+  display: flex;
+  gap: 2rem;
+}
+
+figure{
+  margin: 0;
+}
+
+.headings{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn-center{
+  display: flex;
+  justify-content: center;
+}
+
+.workedwith{
+  text-align: center;
+  color: #b4b4b4;
+}
+
+.worked {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 30px;
+}
+
+
+/* aboutMe */
+.aboutMe {
+    
+    padding: 0 50px;
+}
+
+.aboutMe main{
+  display: flex;
+  gap: 3rem;
+}
+
+#who-am-i{
+  color: #b4b4b4;
+  font-weight: bold;
+  opacity: .8;
+  font-size: 1.4rem;
+}
+
+.blog {
+    padding: 0 50px;
+}
+
+.blog main{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.blog article{
+  width: 300px;
+  margin: 10px 0;
+}
+
+.testimonials {
+  padding: 10px 30px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+}
+
+/*
+.testimonials img{
+  position: relative;
+  bottom: -40%;
+}
+*/
+
+
+@media screen and (max-width: 800px) {
+  h1{
+    font-size: 1.2rem;
+  }
+  .brief p {
+    font-size: 1.2rem;
+    font-weight: medium;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: #080808;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    opacity: .95;
+    padding: 15px 5px;
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .active{
+    display: flex;
+  }
+
+  .nav-menu span{
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .hero img {
+    width: 300px;
+  }
+
+  .hero{
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .projects article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projects article img{
+    width: 300px;
+  }
+
+  .aboutMe main{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutMe main img{
+    width: 300px;
+    text-align: center;
+  }
+}
